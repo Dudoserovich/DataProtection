@@ -1,0 +1,110 @@
+# lab-3
+## Пингуем и сканируем сеть (nmap)
+Пингуем 10.0.2.4 (Это metasploitable) со второй машинки и в обратную сторону пингуем 10.0.2.5 (kali).
+![[chrome_8QPtI6Gfeh.png]]
+![[ShareX_IVYZMA7UH0.png]]
+## Результат nmap
+```
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-11-04 03:10 EDT
+Nmap scan report for 10.0.2.4
+Host is up (0.0078s latency).
+Not shown: 977 closed tcp ports (conn-refused)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+23/tcp   open  telnet      Linux telnetd
+25/tcp   open  smtp        Postfix smtpd
+53/tcp   open  domain      ISC BIND 9.4.2
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+111/tcp  open  rpcbind     2 (RPC #100000)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+512/tcp  open  exec        netkit-rsh rexecd
+513/tcp  open  login       OpenBSD or Solaris rlogind
+514/tcp  open  tcpwrapped
+1099/tcp open  java-rmi    GNU Classpath grmiregistry
+1524/tcp open  bindshell   Metasploitable root shell
+2049/tcp open  nfs         2-4 (RPC #100003)
+2121/tcp open  ftp         ProFTPD 1.3.1
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+5900/tcp open  vnc         VNC (protocol 3.3)
+6000/tcp open  X11         (access denied)
+6667/tcp open  irc         UnrealIRCd
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+```
+## msfconsole
+![[VYOWVju9EF.png]]
+
+## Уязвимый сервис
+До этого была попытка войти через 22 порт, но, к сожалению, она не увенчалась успехом. Возможно из-за того что у параметра password было указано **required** в значении true.
+
+Скриншота нет, я тогда тыкался просто и пытался разобраться.
+
+А сейчас пробуем подключиться по 5432/tcp (postgresql). 
+Для этого сначала ищем эксплойт для postgresql.
+![[VirtualBoxVM_w72PDZOgE3.png]]
+Нам подойдёт 3-ий, именно с помощью него мы и будем проводить атаку на вторую машинку.
+
+### Проверяем доступные опции
+![[VirtualBoxVM_MhD97J43b1.png]]
+В опциях указано не всё и чтобы мы смогли получить доступ ко второй машинке, нужно добавить несколько значений параметров:
+![[VirtualBoxVM_LTDAfQRBDL.png]]
+Мы добавили ip адреса атакуемой и проводящей атаку машинок.
+
+## Проваливаемся внутрь
+Так же, в опциях мы можем заметить meterpreter
+**Meterpreter** — это расширенная многофункциональная нагрузка (payload), которая используется в Metasploit Framework как унифицированная основа для постэксплуатации. По сути — прокачанная альтернатива классическим шелл‑кодам.
+
+Это конечно хорошая штука, но частично урезает наш функционал. Дело в том, что как только мы получим доступ к машинке, наш пользователь будет postgres и соответственно было бы круто иметь какой-то доступ к бд, иначе какой вообще смысл использовать именно этот payload (для posgres). А meterpreter почему-то не даёт возможность использовать команду psql для входа в postgres. 
+
+Это видно из скриншота ниже:
+![[VirtualBoxVM_3skRKiQqvi.png]]
+Раз уж мы уже попали внутрь, попробуем попасть в корневую директорию metasploitable:
+![[VirtualBoxVM_NHPiUDBce0.png]]
+![[VirtualBoxVM_TTCUCDILHv.png]]
+Посмотрим какие вообще действия доступны нашему пользователю:
+![[VirtualBoxVM_b7ELIXkAoc.png]]
+![[VirtualBoxVM_oC6Iw852oP.png]]
+![[VirtualBoxVM_ABNe4rf0DA.png]]
+Собственно, все возможные действия видны на скриншотах и из них видно, что мы не можем даже банально создавать/редактировать файлы. Нас такое не устраивает, но и suid для того же curl у нас нет и сервиса git на машинке нет, поэтому не будем пытаться заниматься повышением наших прав, а попробуем взаимодействовать с бд.
+## Взаимодействие с бд
+Для этого меняем payload и снова проваливаемся внутрь машинки.
+![[VirtualBoxVM_pmdc7olHIQ.png]]
+На скриншоте мы можем видеть созданные бд, но что же там с правами нашего пользователя?
+![[VirtualBoxVM_oDfSh3BSfd.png]]
+Мы являемся суперпользователем и можем делать что угодно с бд. Так давайте что-нибудь сломаем.
+![[VirtualBoxVM_46CAaVB88b.png]]
+Из скриншота видно, что template0 не принимает соединения и доступ у нас есть только к postgres и template1. 
+
+Посмотрим созданные таблицы для бд postgres:
+![[VirtualBoxVM_Y16wlMPHvt 1.png]]
+Ничего ещё нет, посмотрим что есть в template1:
+![[VirtualBoxVM_aZIiyReIfH.png]]
+На скриншоте выше мы создали таблицу, потому что в template1 тоже ничего нет, но если бы что-то было, мы могли бы как-нибудь испортить данные или вытащить и попробовать использовать как-то в своих целях.
+
+И записываем данные и проверяем добавилась ли наша запись:
+![[VirtualBoxVM_ndYHQtdkrY.png]]
+Момент создания забыл заскринить, но вот пруфы, что запись добавляется:
+![[VirtualBoxVM_rnzLidchno.png]]
+
+## Итоги
+Мы попали внутри машинки и можем создавать/удалять пользователей, добавлять им права, в общем, имеем полные права на взаимодействия с postgres.
+
+Кстати, сервис postgresql запущен на стандартном порту (5432) и пользователь postgres имеет стандартный пароль postgres это косяк, которым может воспользоваться злоумышленник, но проблема ещё и в том, что пароль является не обязательным.
+
+Необязательный пароль - это угода старыйх версий psql, что и видно на скриншоте ниже:
+![[VirtualBoxVM_yP4edN4CP0.png]]
+Эта версия подверженна уязвимости CVE-2018-10915 - некоторые параметры подключения к хосту обходят защиту безопасности на стороне клиента.
+
+Через тот же 22 порт у меня не получилось подключиться, потому что пароль был обязательным:
+![[VirtualBoxVM_jqgQbJlzcm.png]]
+![[VirtualBoxVM_ZLfDTZ0ErW.png]]
+И с другим эксплойтом уже по какой-то другой причине, тут происходит попытка использования какой-то другой уязвимости:
+![[VirtualBoxVM_OJ5KiYzAvi.png]]
+![[VirtualBoxVM_Jx8xjZq5kd.png]]
+![[VirtualBoxVM_2CFoC4dwum.png]]
+
+В общем, не будь у сервиса postgresql стандартного пароля и не будь он не обязательным, провалиться внутрь машинки было бы сложнее.

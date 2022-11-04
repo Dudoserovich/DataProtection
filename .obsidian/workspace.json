@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "dcb461a863c7a0f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dc8a134915aec25",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1ba71e294585cdb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3-lab/Отчёт lab-3.md.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "4fcc6833f0a66f51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60503becf76e6707",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3-lab/Отчёт lab-3.md.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "90877b34ce6ef8ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8c9ace9e4b35d99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c06d14e7a91dd0f2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "198b5bc882e8237a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2bf89fd1e29e4e62",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fc9d0ef8837705d2",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3ebe87a13c031e5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "487ef27addeb82ab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3-lab/Отчёт lab-3.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "da593e9277e62182",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3-lab/Отчёт lab-3.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "46d641c84fac7277",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4fa1135932aef41a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3-lab/Отчёт lab-3.md.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "c06d14e7a91dd0f2",
+  "lastOpenFiles": [
+    "3-lab/screenshots/chrome_8QPtI6Gfeh.png",
+    "3-lab/Отчёт lab-3.md.md",
+    "1-lab/Отчёт lab1.md.md",
+    "1-lab/TaskSetting-lab1.md.md",
+    "1-lab/screenshots/Pasted image 20221007103046.png",
+    "1-lab/screenshots/Screenshot_2022-10-07_02_15_30.png",
+    "1-lab/screenshots/Pasted image 20221007015236.png",
+    "Screenshot_2022-10-06_15_20_06.png",
+    "1-lab/screenshots/Screenshot_2022-10-06_15_09_52.png",
+    "1-lab/screenshots/Screenshot_2022-10-06_15_02_38.png"
+  ]
+}
