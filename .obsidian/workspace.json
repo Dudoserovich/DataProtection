@@ -4,37 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2dc8a134915aec25",
+        "id": "a55834a0edc6372a",
         "type": "tabs",
         "children": [
           {
-            "id": "d1ba71e294585cdb",
+            "id": "5db2928b7f1dbe64",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3-lab/Отчёт lab-3.md.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "4fcc6833f0a66f51",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "60503becf76e6707",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3-lab/Отчёт lab-3.md.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -103,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3-lab/Отчёт lab-3.md.md",
+                "file": "hackthebox-labs/screenshots/Pasted image 20221204005503.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3-lab/Отчёт lab-3.md.md",
+                "file": "hackthebox-labs/screenshots/Pasted image 20221204005503.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3-lab/Отчёт lab-3.md.md"
+                "file": "hackthebox-labs/screenshots/Pasted image 20221204005503.png"
               }
             }
           }
@@ -156,15 +134,15 @@
   },
   "active": "c06d14e7a91dd0f2",
   "lastOpenFiles": [
-    "3-lab/screenshots/chrome_8QPtI6Gfeh.png",
-    "3-lab/Отчёт lab-3.md.md",
-    "1-lab/Отчёт lab1.md.md",
-    "1-lab/TaskSetting-lab1.md.md",
-    "1-lab/screenshots/Pasted image 20221007103046.png",
-    "1-lab/screenshots/Screenshot_2022-10-07_02_15_30.png",
-    "1-lab/screenshots/Pasted image 20221007015236.png",
-    "Screenshot_2022-10-06_15_20_06.png",
-    "1-lab/screenshots/Screenshot_2022-10-06_15_09_52.png",
-    "1-lab/screenshots/Screenshot_2022-10-06_15_02_38.png"
+    "hackthebox-labs/tier_1/lab_4(Responder).md",
+    "hackthebox-labs/screenshots/Pasted image 20221203221032.png",
+    "hackthebox-labs/tier_1/lab_1(Appointment).md",
+    "hackthebox-labs/tier_1/lab_2(Sequel).md",
+    "hackthebox-labs/tier_1/lab_3(Crocodile).md",
+    "hackthebox-labs/screenshots/Pasted image 20221203192427.png",
+    "hackthebox-labs/tier_0/lab_4(Redeemer).md",
+    "hackthebox-labs/tier_1/lab_5(Three).md",
+    "hackthebox-labs/tier_2/lab_1(Archetype).md",
+    "hackthebox-labs/tier_2/lab_2 (Oopsie).md"
   ]
 }
