@@ -4,35 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "81c3507838dd3ae3",
+        "id": "3c437935bbeb8873",
         "type": "tabs",
         "children": [
           {
-            "id": "ca3ad3effb7e856e",
+            "id": "1346973f3da3b85e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "hackthebox-labs/tier_1/lab_5(Three).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b54ddcd4fe0a3b39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "hackthebox-labs/tier_1/lab_5(Three).md",
-                "mode": "source",
-                "source": false
+                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hackthebox-labs/tier_1/lab_5(Three).md",
+                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hackthebox-labs/tier_1/lab_5(Three).md",
+                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hackthebox-labs/tier_1/lab_5(Three).md"
+                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png"
               }
             }
           }
@@ -149,17 +134,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b54ddcd4fe0a3b39",
+  "active": "c06d14e7a91dd0f2",
   "lastOpenFiles": [
-    "hackthebox-labs/tier_1/lab_4(Responder).md",
+    "hackthebox-labs/tier_2/lab_3(Vaccine).md",
+    "hackthebox-labs/tier_2/lab_2 (Oopsie).md",
+    "hackthebox-labs/tier_2/lab_1(Archetype).md",
+    "hackthebox-labs/tier_1/lab_5(Three).md",
     "hackthebox-labs/tier_1/lab_3(Crocodile).md",
-    "hackthebox-labs/screenshots/Pasted image 20221203152337.png",
-    "1-lab/TaskSetting-lab1.md.md",
-    "1-lab/Отчёт lab1.md.md",
-    "1-lab/screenshots/Pasted image 20221007103046.png",
-    "1-lab/screenshots/Screenshot_2022-10-07_02_15_30.png",
-    "1-lab/screenshots/Pasted image 20221007015236.png",
-    "Screenshot_2022-10-06_15_20_06.png",
-    "1-lab/screenshots/Screenshot_2022-10-06_15_09_52.png"
+    "hackthebox-labs/tier_1/lab_2(Sequel).md",
+    "hackthebox-labs/tier_1/lab_1(Appointment).md",
+    "hackthebox-labs/tier_0/lab_4(Redeemer).md",
+    "hackthebox-labs/tier_0/lab_3(Dancing).md",
+    "hackthebox-labs/tier_0/lab_2(Fawn).md"
   ]
 }

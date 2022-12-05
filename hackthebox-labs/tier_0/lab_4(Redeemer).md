@@ -1,3 +1,4 @@
+## ping
 ![[Pasted image 20221203182107.png]]
 
 ## nmap
