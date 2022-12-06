@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3c437935bbeb8873",
+        "id": "28254415d4eacc3e",
         "type": "tabs",
         "children": [
           {
-            "id": "1346973f3da3b85e",
+            "id": "3ba5170f1f887464",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png",
+                "file": "hackthebox-labs/screenshots/M3V9udh89W.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png",
+                "file": "hackthebox-labs/screenshots/M3V9udh89W.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hackthebox-labs/screenshots/Pasted image 20221204225405.png"
+                "file": "hackthebox-labs/screenshots/M3V9udh89W.png"
               }
             }
           }
@@ -136,15 +134,15 @@
   },
   "active": "c06d14e7a91dd0f2",
   "lastOpenFiles": [
-    "hackthebox-labs/tier_2/lab_3(Vaccine).md",
-    "hackthebox-labs/tier_2/lab_2 (Oopsie).md",
-    "hackthebox-labs/tier_2/lab_1(Archetype).md",
+    "hackthebox-labs/tier_2/lab_4(Unified).md",
     "hackthebox-labs/tier_1/lab_5(Three).md",
+    "hackthebox-labs/tier_2/lab_1(Archetype).md",
+    "hackthebox-labs/tier_2/lab_2 (Oopsie).md",
+    "hackthebox-labs/tier_2/lab_3(Vaccine).md",
+    "hackthebox-labs/screenshots/Pasted image 20221204225405.png",
     "hackthebox-labs/tier_1/lab_3(Crocodile).md",
     "hackthebox-labs/tier_1/lab_2(Sequel).md",
     "hackthebox-labs/tier_1/lab_1(Appointment).md",
-    "hackthebox-labs/tier_0/lab_4(Redeemer).md",
-    "hackthebox-labs/tier_0/lab_3(Dancing).md",
-    "hackthebox-labs/tier_0/lab_2(Fawn).md"
+    "hackthebox-labs/tier_0/lab_4(Redeemer).md"
   ]
 }
