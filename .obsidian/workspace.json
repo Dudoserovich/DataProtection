@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "28254415d4eacc3e",
+        "id": "b5af5cb7b2feee3e",
         "type": "tabs",
         "children": [
           {
-            "id": "3ba5170f1f887464",
+            "id": "0491439f5805a42c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -60,6 +60,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "5b3a0ae587e21585",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -81,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hackthebox-labs/screenshots/M3V9udh89W.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hackthebox-labs/screenshots/M3V9udh89W.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "hackthebox-labs/screenshots/M3V9udh89W.png"
-              }
+              "state": {}
             }
           }
         ]
@@ -132,17 +136,45 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c06d14e7a91dd0f2",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0491439f5805a42c",
   "lastOpenFiles": [
-    "hackthebox-labs/tier_2/lab_4(Unified).md",
-    "hackthebox-labs/tier_1/lab_5(Three).md",
-    "hackthebox-labs/tier_2/lab_1(Archetype).md",
     "hackthebox-labs/tier_2/lab_2 (Oopsie).md",
-    "hackthebox-labs/tier_2/lab_3(Vaccine).md",
-    "hackthebox-labs/screenshots/Pasted image 20221204225405.png",
+    "hackthebox-labs/screenshots/Pasted image 20221204233614.png",
+    "hackthebox-labs/tier_2/lab_1(Archetype).md",
+    "hackthebox-labs/tier_1/lab_5(Three).md",
+    "hackthebox-labs/tier_1/lab_4(Responder).md",
     "hackthebox-labs/tier_1/lab_3(Crocodile).md",
     "hackthebox-labs/tier_1/lab_2(Sequel).md",
     "hackthebox-labs/tier_1/lab_1(Appointment).md",
-    "hackthebox-labs/tier_0/lab_4(Redeemer).md"
+    "hackthebox-labs/tier_0/lab_4(Redeemer).md",
+    "flags/Флаг в папке \"Новая папка\".md",
+    "flags/disco.md",
+    "flags/task4.jpg.md",
+    "flags/task1.gif.md",
+    "flags/shatatun.md",
+    "flags/screenshots/disco-flag (2).png",
+    "flags/screenshots/task4.jpg",
+    "flags/screenshots/Pasted image 20230501153531.png",
+    "flags/screenshots/Pasted image 20230501153453.png",
+    "flags/screenshots/Pasted image 20230501153247.png",
+    "flags/screenshots/Pasted image 20230501153031.png",
+    "flags/screenshots/Pasted image 20230501152555.png",
+    "flags/screenshots/Pasted image 20230501152524.png",
+    "flags/screenshots/Pasted image 20230501152316.png",
+    "flags/screenshots",
+    "flags",
+    "hackthebox-labs/tier_0/lab_2(Fawn).md",
+    "hackthebox-labs/tier_0/lab_3(Dancing).md",
+    "hackthebox-labs/tier_0/lab_1(Meow).md"
   ]
 }
